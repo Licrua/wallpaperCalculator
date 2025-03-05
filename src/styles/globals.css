@@ -7,7 +7,9 @@
   --font-secondary: "Inter", sans-serif;
   --color-primary: #3498db;
   --color-secondary: #2ecc71;
+  --button-border-radius: 12px;
   --color-background: #F5F7F9;
+  --color-button: #526EFF;
   --color-text: #111111CC;
   --header-font-weight: 600;
   --regular-font-weight: 400;
@@ -52,6 +54,10 @@ h6 {
   font-family: var(--font-secondary);
   font-weight: var(--header-font-weight);
 }
+/* button {
+	 border-radius: var(--button-border-radius);
+	 background-color: var(--color-button);
+} */
 
 h1 {
   font-size: 2em;
@@ -59,6 +65,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+  line-height: 2rem;
 }
 
 ul,

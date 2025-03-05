@@ -1,5 +1,5 @@
 import styles from "@/styles/greeting/greeting.module.css";
-import light from "@/assets/images/Vector.svg";
+import light from "@/assets/images/magicStick.svg";
 
 function Greeting({ onClick }: { onClick: () => void }) {
   return (
@@ -22,4 +22,3 @@ function Greeting({ onClick }: { onClick: () => void }) {
 }
 
 export default Greeting;
-

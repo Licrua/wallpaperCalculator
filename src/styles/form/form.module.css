@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 58px 80px;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 990px;
+  max-height: 1106px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.metrics {
+  display: flex;
+  justify-content: space-between;
+}
+.paragraph {
+  margin-bottom: 8px;
+}
+.removeButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.parametrs {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(266px, 320px));
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #11111152;
+  min-height: 56px;
+  border-radius: 8px;
+}
+
+.buttonsGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 42px;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  cursor: pointer;
+  opacity: 20%;
+  background-color: var(--color-button);
+}
+
+.buttonActive {
+  background-color: var(--color-button);
+}
+.buttonInactive {
+  opacity: 20%;
+}
+.button.active {
+  background: var(--color-button);
+  color: #fff;
+}
+
+.section {
+  margin-bottom: 73px;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+}
+.addButton:hover {
+  opacity: 100%;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonSection {
+  max-width: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-button);
+  padding: 39px 66px;
+}
+.addButton {
+  border-radius: 100px;
+  padding: 10px;
+  opacity: 20%;
+  background-color: var(--color-button);
+}
+
+.small {
+  width: 74px;
+}
+
+.medium {
+  width: 142px;
+}
+
+.large {
+  width: 180px;
+}
+
+/* viravnivanie */
+
+/* Okno */
+.windowContainer {
+  display: flex;
+  gap: 20px; /* Расстояние между окнами и секцией с кнопками */
+}
+
+.windowItem {
+  width: 266px;
+  padding: 12px 18px;
+  height: auto;
+  border: 1px dashed #526eff;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+}
+
+.windowTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 26px;
+}
+
+.windowSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.removeButton img {
+  margin-top: 4px;
+}
+
+.windowField {
+  margin-top: 8px;
+  max-width: 107px;
+  border-radius: 8px;
+  border: 1px solid #11111152;
+  padding: 16px;
+}
