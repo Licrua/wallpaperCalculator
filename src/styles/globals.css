@@ -9,9 +9,10 @@
   --color-secondary: #2ecc71;
   --button-border-radius: 12px;
   --color-background: #F5F7F9;
-  --color-button: #526EFF;
+--color-button: #526EFF;
   --color-text: #111111CC;
-  --header-font-weight: 600;
+  --primary-font-weight: 600;
+  --secondary-font-weight: 500;
   --regular-font-weight: 400;
   --main-header-size: 1.75rem;
 --main-header-line-height: 1.22;
@@ -52,7 +53,7 @@ h5,
 h6 {
   margin: 0;
   font-family: var(--font-secondary);
-  font-weight: var(--header-font-weight);
+  font-weight: var(--primary-font-weight);
 }
 /* button {
 	 border-radius: var(--button-border-radius);

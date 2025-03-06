@@ -4,10 +4,11 @@
   padding: 58px 80px;
   background: #fff;
   border-radius: 12px;
+  overflow: hidden;
   max-width: 990px;
-  max-height: 1106px;
+  /* max-height: 1106px; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin: 0 auto;
 }
 .metrics {
@@ -79,6 +80,10 @@
 }
 
 .section {
+  /* display: flex; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  overflow: hidden;
   margin-bottom: 73px;
 }
 
@@ -113,14 +118,15 @@
 
 .buttonSection {
   max-width: 266px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 180px;
+  /* min-height: 180px; */
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--color-button);
+  border: 1px dashed var(--color-button);
   padding: 39px 66px;
 }
 .addButton {
@@ -145,17 +151,26 @@
 /* viravnivanie */
 
 /* Okno */
+
+.items {
+  display: flex;
+  flex-wrap: wrap; /* Чтобы окна переносились на новую строку */
+  gap: 16px;
+  justify-content: flex-start;
+}
+
 .windowContainer {
   display: flex;
   gap: 20px; /* Расстояние между окнами и секцией с кнопками */
 }
 
 .windowItem {
-  width: 266px;
+  flex: 1 1 calc(33.333% - 16px); /* Позволяет окнам занимать 1/3 ширины с учетом отступов */
+  max-width: 266px; /* Максимальная ширина одного окна */
+  border-radius: 8px;
   padding: 12px 18px;
+  border: 1px dashed var(--color-button);
   height: auto;
-  border: 1px dashed #526eff;
-  gap: 10px;
 }
 .buttons {
   display: flex;
@@ -185,3 +200,89 @@
   border: 1px solid #11111152;
   padding: 16px;
 }
+
+/* 
+result
+*/
+
+.results {
+  width: 100%;
+  border-radius: 18px;
+  padding: 42px 52px;
+  background-color: var(--color-button);
+  max-width: 830px;
+  margin-top: 58px;
+}
+
+.resultsTitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+/* 
+.container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.resultsText {
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-weight: var(--primary-font-weight);
+  color: #ffffff;
+}
+
+.resultValue {
+  font-weight: var(--secondary-font-weight);
+  color: #FFFFFFA3;
+}
+
+.resultSection {
+	display: flex;
+	gap: 54px;
+	margin-bottom: 32px;
+}
+
+.resultsSubtitle {
+	color: #FFFFFFA3;
+	margin: 0;
+}
+
+.resultContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.resetButton {
+  background-color: #FFFFFF;
+  color: var(--color-button);
+  border: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+  /* margin-top: 16px; */
+}
+
+/* .resetButton:hover {
+  background-color: #cc0000;
+} */
+
+.catalogButton {
+	background-color: #FFFFFF;
+	color: #5ACD66;
+	border: none;
+	padding: 15px 32px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+
+.buttonsContainer {
+	display: flex;
+	gap: 16px;
+}
+/* .catalogButton:hover {
+  background-color: #45a049;
+} */
