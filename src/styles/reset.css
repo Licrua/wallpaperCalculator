@@ -33,9 +33,10 @@ ol[role="list"] {
 }
 
 /* Set core body defaults */
+html,
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+  height: 100%;
+  overflow-x: hidden; 
 }
 
 /* Set shorter line heights on headings and interactive elements */

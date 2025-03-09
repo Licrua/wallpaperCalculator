@@ -5,16 +5,17 @@
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
+  position: relative;
   max-width: 990px;
-  /* max-height: 1106px; */
   width: 100%;
-  /* height: 100%; */
-  margin: 0 auto;
+  margin: 156px auto;
 }
+
 .metrics {
   display: flex;
   justify-content: space-between;
 }
+
 .paragraph {
   margin-bottom: 8px;
 }
@@ -22,6 +23,11 @@
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.crest {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -56,6 +62,7 @@
 .buttonsGroup {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 42px;
 }
 
@@ -80,9 +87,6 @@
 }
 
 .section {
-  /* display: flex; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   overflow: hidden;
   margin-bottom: 73px;
 }
@@ -123,7 +127,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 180px; */
   gap: 10px;
   border-radius: 8px;
   border: 1px dashed var(--color-button);
@@ -148,25 +151,24 @@
   width: 180px;
 }
 
-/* viravnivanie */
-
 /* Okno */
 
 .items {
   display: flex;
-  flex-wrap: wrap; /* Чтобы окна переносились на новую строку */
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: flex-start;
 }
 
 .windowContainer {
   display: flex;
-  gap: 20px; /* Расстояние между окнами и секцией с кнопками */
+  gap: 20px;
 }
 
 .windowItem {
-  flex: 1 1 calc(33.333% - 16px); /* Позволяет окнам занимать 1/3 ширины с учетом отступов */
-  max-width: 266px; /* Максимальная ширина одного окна */
+  position: relative;
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: 266px;
   border-radius: 8px;
   padding: 12px 18px;
   border: 1px dashed var(--color-button);
@@ -200,6 +202,9 @@
   border: 1px solid #11111152;
   padding: 16px;
 }
+.windowField:hover {
+  border: 1px solid #1111117a;
+}
 
 /* 
 result
@@ -220,11 +225,6 @@ result
   margin-bottom: 24px;
   color: #ffffff;
 }
-/* 
-.container {
-  display: flex;
-  flex-direction: column;
-} */
 
 .resultsText {
   font-size: 1.5em;
@@ -235,54 +235,92 @@ result
 
 .resultValue {
   font-weight: var(--secondary-font-weight);
-  color: #FFFFFFA3;
+  color: #ffffffa3;
 }
 
 .resultSection {
-	display: flex;
-	gap: 54px;
-	margin-bottom: 32px;
+  display: flex;
+  gap: 54px;
+  margin-bottom: 32px;
 }
 
 .resultsSubtitle {
-	color: #FFFFFFA3;
-	margin: 0;
+  color: #ffffffa3;
+  margin: 0;
 }
 
 .resultContainer {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .resetButton {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: var(--color-button);
   border: none;
   padding: 15px 32px;
   border-radius: 12px;
   cursor: pointer;
-  /* margin-right: 10px; */
-  /* margin-top: 16px; */
 }
-
-/* .resetButton:hover {
-  background-color: #cc0000;
-} */
 
 .catalogButton {
-	background-color: #FFFFFF;
-	color: #5ACD66;
-	border: none;
-	padding: 15px 32px;
-	border-radius: 12px;
-	cursor: pointer;
+	width: 100%;
+  background-color: #ffffff;
+  color: #5acd66;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  cursor: pointer;
 }
-
 
 .buttonsContainer {
-	display: flex;
-	gap: 16px;
+  display: flex;
+  gap: 16px;
 }
-/* .catalogButton:hover {
-  background-color: #45a049;
-} */
+
+@media (max-width: 850px) {
+  .container {
+    padding: 22px 28px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .metrics {
+    display: flex;
+    flex-direction: column;
+  }
+  .section {
+    margin-bottom: 0;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonSection {
+    margin-bottom: 42px;
+  }
+  .resultSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .resetButton, .catalogButton {
+	padding: 15px 17px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 850px) {
+  .container {
+    margin: 50px auto;
+  }
+  .items {
+    flex-direction: row;
+  }
+}

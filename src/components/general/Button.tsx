@@ -1,12 +1,7 @@
 import styles from "@/styles/general/button.module.css";
+import { ButtonProps } from "../../types/button";
 
-type ButtonProps = {
-  children: React.ReactNode;
-  onClick?: () => void;
-  isActive?: boolean;
-  className?: string;
-  type: "button" | "submit";
-};
+
 
 export default function Button({
   children,

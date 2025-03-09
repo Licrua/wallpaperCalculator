@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "./reset.css";
 
 :root {
@@ -8,27 +6,24 @@
   --color-primary: #3498db;
   --color-secondary: #2ecc71;
   --button-border-radius: 12px;
-  --color-background: #F5F7F9;
---color-button: #526EFF;
-  --color-text: #111111CC;
+  --color-background: #f5f7f9;
+  --color-button: #526eff;
+  --color-text: #111111cc;
   --primary-font-weight: 600;
   --secondary-font-weight: 500;
   --regular-font-weight: 400;
-  --main-header-size: 1.75rem;
---main-header-line-height: 1.22;
---secondary-header-size: 1.5rem;
---secondary-header-line-height: 1.33;
+  --secondary-header-size: 1.5rem;
+  --secondary-header-line-height: 1.33;
 }
 
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
   font-family: var(--font-primary);
   font-size: 16px;
   color: var(--color-text);
   background-color: var(--color-background);
   margin: 0;
   padding: 0;
-  line-height: 1.5;
   min-height: 100vh;
 }
 
@@ -94,3 +89,6 @@ picture {
 *::after {
   box-sizing: border-box;
 }
+
+
+

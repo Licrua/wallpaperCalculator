@@ -11,9 +11,7 @@
   justify-content: center;
   gap: 8px;
   border: none;
-  transition: 0.3s;
 }
-
 
 .inactive {
   opacity: 20%;
@@ -23,3 +21,9 @@
   opacity: 1;
 }
 
+
+@media (max-width: 850px)  {
+	.button {
+		padding: 16px 16px;
+	}
+}

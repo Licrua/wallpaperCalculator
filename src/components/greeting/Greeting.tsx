@@ -5,12 +5,10 @@ import { GreetingHeader } from "./GreetingButton";
 
 function Greeting({ onClick }: { onClick: () => void }) {
   return (
-    <div className={styles.block}>
-      <div className={styles.container}>
-        <GreetingHeader />
-        <GreetingDescription />
-        <GreetingButton onClick={onClick} />
-      </div>
+    <div className={styles.container}>
+      <GreetingHeader />
+      <GreetingDescription />
+      <GreetingButton onClick={onClick} />
     </div>
   );
 }
