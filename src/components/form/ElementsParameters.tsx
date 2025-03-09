@@ -13,7 +13,7 @@ function ElementsParameters({
   setElements,
 }: Props) {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.items}>
         {elements.map(({ id }) => (
@@ -59,7 +59,7 @@ function ElementsParameters({
           <span>{label}</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

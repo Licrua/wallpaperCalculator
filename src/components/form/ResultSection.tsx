@@ -1,7 +1,7 @@
 import styles from "@/styles/form/resultSection.module.css";
 import Props from "../../types/resultProps";
 
-function ResultsSection({ results, resetForm }: Props) {
+function ResultsSection({ results, resetForm, onClick }: Props) {
   if (!results) return null;
 
   const resultData = [
@@ -34,6 +34,9 @@ function ResultsSection({ results, resetForm }: Props) {
           className={styles.catalogButton}
         >
           Перейти в каталог
+        </button>
+        <button onClick={onClick} className={styles.sendButton}>
+          Отправить результаты
         </button>
       </div>
     </section>

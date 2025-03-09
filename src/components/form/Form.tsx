@@ -9,6 +9,7 @@ import { rollSizes } from "../../data/rollSizes";
 import { rapports } from "../../data/rapports";
 import { calculateMaterials } from "../../utils/calculateMaterials";
 import handleInputChange from "../../utils/handleInputChange";
+import FeedbackForm from "../feedback/Feedback";
 
 function Form() {
   const [room, setRoom] = useState({ length: "14.2", width: "28.5", height: "18.5" });
@@ -16,6 +17,7 @@ function Form() {
   const [doors, setDoors] = useState<{ id: number; height: string; width: string }[]>([]);
   const [rollSize, setRollSize] = useState(rollSizes[0]);
   const [rapport, setRapport] = useState(Object.keys(rapports)[0]);
+  const [isFormShow, setIsFormShow] = useState(false);
   const [results, setResults] = useState<{
     wallpaperArea: string;
     rollsNeeded: number;
@@ -30,6 +32,10 @@ function Form() {
   const handleCalculate = () => {
     const newResults = calculateMaterials(room, windows, doors, rollSize, rapport);
     setResults(newResults);
+  };
+  const sendFormHandler = () => {
+    setIsFormShow(false);
+    alert("Форма отрпавлена успешна");
   };
 
   const resetForm = () => {
@@ -46,7 +52,7 @@ function Form() {
   };
 
   return (
-    <section className={styles.container}>
+    <main className={styles.container}>
       <form onSubmit={(e) => e.preventDefault()}>
         <RoomParameters room={room} setRoom={setRoom} handleInputChange={handleInputChange} />
         <RollParameters
@@ -79,9 +85,14 @@ function Form() {
         <Button type="button" isActive onClick={handleCalculate}>
           Рассчитать материалы
         </Button>
-        <ResultsSection resetForm={resetForm} results={results} />
+        <ResultsSection
+          onClick={() => setIsFormShow(true)}
+          resetForm={resetForm}
+          results={results}
+        />
       </form>
-    </section>
+      {isFormShow && <FeedbackForm onClick={sendFormHandler} results={results} />}
+    </main>
   );
 }
 

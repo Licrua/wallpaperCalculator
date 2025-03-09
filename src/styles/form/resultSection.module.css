@@ -1,70 +1,3 @@
-/* .results {
-  width: 100%;
-  border-radius: 18px;
-  padding: 42px 52px;
-  background-color: var(--color-button);
-  max-width: 830px;
-  margin-top: 58px;
-}
-
-.resultsTitle {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin-bottom: 24px;
-  color: #ffffff;
-}
-
-.resultsText {
-  font-size: 1.5em;
-  line-height: 2rem;
-  font-weight: var(--primary-font-weight);
-  color: #ffffff;
-}
-
-.resultValue {
-  font-weight: var(--secondary-font-weight);
-  color: #ffffffa3;
-}
-
-.resultSection {
-  display: flex;
-  gap: 54px;
-  margin-bottom: 32px;
-}
-
-.resultsSubtitle {
-  color: #ffffffa3;
-  margin: 0;
-}
-
-.resultContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.resetButton {
-  background-color: #ffffff;
-  color: var(--color-button);
-  border: none;
-  padding: 15px 32px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.catalogButton {
-  background-color: #ffffff;
-  color: #5acd66;
-  border: none;
-  padding: 15px 32px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.buttonsContainer {
-  display: flex;
-  gap: 16px;
-} */
-
 .results {
   width: 100%;
   border-radius: 18px;
@@ -125,6 +58,16 @@
   padding: 15px 32px;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.sendButton {
+	background-color: #ffffff;
+  color: red;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+
 }
 
 .buttonsContainer {

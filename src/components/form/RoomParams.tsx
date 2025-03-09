@@ -9,7 +9,7 @@ type Props = {
 
 function RoomParameters({ room, handleInputChange, setRoom }: Props) {
   return (
-    <>
+    <section>
       <h2 className={styles.title}>Параметры комнаты</h2>
       <div className={styles.grid}>
         {Object.keys(room).map((key, index) => (
@@ -25,7 +25,7 @@ function RoomParameters({ room, handleInputChange, setRoom }: Props) {
           </label>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 
