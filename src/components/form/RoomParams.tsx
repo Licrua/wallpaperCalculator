@@ -1,4 +1,4 @@
-import styles from "@/styles/form/form.module.css";
+import styles from "@/styles/form/roomParams.module.css";
 import { roomParams } from "../../data/roomParams";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 function RoomParameters({ room, handleInputChange, setRoom }: Props) {
   return (
-    <div>
+    <>
       <h2 className={styles.title}>Параметры комнаты</h2>
       <div className={styles.grid}>
         {Object.keys(room).map((key, index) => (
@@ -25,7 +25,7 @@ function RoomParameters({ room, handleInputChange, setRoom }: Props) {
           </label>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

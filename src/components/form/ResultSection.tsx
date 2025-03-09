@@ -1,4 +1,4 @@
-import styles from "@/styles/form/form.module.css";
+import styles from "@/styles/form/resultSection.module.css";
 import Props from "../../types/resultProps";
 
 function ResultsSection({ results, resetForm }: Props) {

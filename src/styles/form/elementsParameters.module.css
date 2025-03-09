@@ -1,0 +1,132 @@
+.section {
+  overflow: hidden;
+  margin-bottom: 73px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.windowItem {
+  position: relative;
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: 266px;
+  border-radius: 8px;
+  padding: 12px 18px;
+  border: 1px dashed var(--color-button);
+  height: auto;
+}
+
+.windowSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.windowTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 26px;
+}
+
+.removeButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.windowField {
+  margin-top: 8px;
+  max-width: 107px;
+  border-radius: 8px;
+  border: 1px solid #11111152;
+  padding: 16px;
+}
+
+.windowField:hover {
+  border: 1px solid #1111117a;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+}
+
+.buttonSection {
+  max-width: 266px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px dashed var(--color-button);
+  padding: 39px 66px;
+}
+
+.buttonSection {
+  max-width: 266px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px dashed var(--color-button);
+  padding: 39px 66px;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 10px;
+  opacity: 20%;
+  background-color: var(--color-button);
+}
+
+.addButton:hover {
+  opacity: 100%;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 650px) and (max-width: 850px) {
+  .items {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 850px) {
+  .section {
+    margin-bottom: 0;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonSection {
+    margin-bottom: 42px;
+  }
+  .resultSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

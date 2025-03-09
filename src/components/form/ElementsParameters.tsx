@@ -1,4 +1,4 @@
-import styles from "@/styles/form/form.module.css";
+import styles from "@/styles/form/elementsParameters.module.css";
 import add from "@/assets/images/add.svg";
 import Cross from "../general/Cross";
 import Props from "../../types/elemntsProps";

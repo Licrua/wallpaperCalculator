@@ -1,4 +1,4 @@
-import styles from "@/styles/form/form.module.css";
+import styles from "@/styles/form/rollParams.module.css";
 import { rollSizes } from "../../data/rollSizes";
 import { rapports } from "../../data/rapports";
 import Button from "../general/Button";

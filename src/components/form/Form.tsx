@@ -79,7 +79,6 @@ function Form() {
         <Button type="button" isActive onClick={handleCalculate}>
           Рассчитать материалы
         </Button>
-
         <ResultsSection resetForm={resetForm} results={results} />
       </form>
     </section>

@@ -1,0 +1,35 @@
+.title {
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+.grid {
+
+	display: grid;
+	grid-template-columns: repeat(3, minmax(266px, 320px));
+	gap: 16px;
+	margin-bottom: 42px;
+}
+.label {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+.input {
+	padding: 8px;
+	border: 1px solid #11111152;
+	min-height: 56px;
+	border-radius: 8px;
+}
+.paragraph {
+	margin-bottom: 8px;
+
+}
+
+@media (max-width: 850px) {
+	.grid {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+	  }
+}
