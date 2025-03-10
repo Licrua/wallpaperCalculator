@@ -7,7 +7,7 @@ interface StartButtonProps {
 
 export function GreetingButton({ onClick }: StartButtonProps) {
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button type="button" onClick={onClick} className={styles.button}>
       <img className={styles.image} src={light} alt="light" />
       <span className={styles.buttonText}>Начать расчет материалов</span>
     </button>

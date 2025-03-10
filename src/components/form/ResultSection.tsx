@@ -22,7 +22,7 @@ function ResultsSection({ results, resetForm, onClick }: Props) {
         ))}
       </div>
       <div className={styles.buttonsContainer}>
-        <button onClick={resetForm} className={styles.resetButton}>
+        <button type="button" onClick={resetForm} className={styles.resetButton}>
           Сбросить параметры
         </button>
         <button
@@ -35,7 +35,7 @@ function ResultsSection({ results, resetForm, onClick }: Props) {
         >
           Перейти в каталог
         </button>
-        <button onClick={onClick} className={styles.sendButton}>
+        <button type="button" onClick={onClick} className={styles.sendButton}>
           Отправить результаты
         </button>
       </div>

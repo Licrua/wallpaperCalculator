@@ -23,6 +23,7 @@ function ElementsParameters({
                 {title === "Параметры окон" ? "Окно" : "Дверь"}
               </h3>
               <button
+                type="button"
                 aria-label="Удалить"
                 className={styles.removeButton}
                 onClick={() => removeElement(id)}

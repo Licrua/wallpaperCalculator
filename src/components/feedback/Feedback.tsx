@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import styles from "@/styles/feedback/feedback.module.css";
+import toast from "react-hot-toast";
 
 type FormDataType = {
   name: string;
@@ -45,10 +46,10 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
     });
 
     if (response.ok) {
-      alert("Сообщение отправлено успешно!");
+      toast.success("Форма успешна отправлена!");
       onClick();
     } else {
-      alert("Произошла ошибка при отправке сообщения.");
+		toast.error("Что - то пошло не так");
     }
   };
 
@@ -58,7 +59,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
         <div className={styles.header}>
           <h2 className={styles.title}>Обратная связь</h2>
           <p className={styles.text}>
-            Пожалуйста, оставьте ваше сообщение, и мы свяжемся с вами в ближайшее время.
+            Пожалуйста, оставьте ваше имя и почту, чтобы получить данные калькулятора
           </p>
         </div>
         <div className={styles.formContainer}>
