@@ -7,9 +7,11 @@ import ResultsSection from "./ResultSection";
 import Button from "../general/Button";
 import { rollSizes } from "../../data/rollSizes";
 import { rapports } from "../../data/rapports";
+// import { calculateMaterials } from "../../utils/calculateMaterials";
+// import handleInputChange from "../../utils/handleInputChange";
+import FeedbackForm from "../feedback/Feedback";
 import { calculateMaterials } from "../../utils/calculateMaterials";
 import handleInputChange from "../../utils/handleInputChange";
-import FeedbackForm from "../feedback/Feedback";
 
 function Form() {
   const [room, setRoom] = useState({ length: "14.2", width: "28.5", height: "18.5" });

@@ -1,6 +1,7 @@
 .feedback {
   display: grid;
   padding: 50px;
+  position: relative;
   border: 2px solid grey;
   margin: 10px;
   background-color: gainsboro;

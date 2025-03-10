@@ -3,6 +3,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import styles from "@/styles/feedback/feedback.module.css";
 import toast from "react-hot-toast";
+import Cross from "../general/Cross";
 
 type FormDataType = {
   name: string;
@@ -56,6 +57,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
   return (
     <div className={styles.overlay}>
       <section className={styles.feedback}>
+        <Cross styles={{ position: "absolute", top: 10, right: 10 }} />
         <div className={styles.header}>
           <h2 className={styles.title}>Обратная связь</h2>
           <p className={styles.text}>
@@ -78,11 +80,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
               <input type="email" id="email" {...register("email")} className={styles.input} />
               {errors.email && <span className={styles.error}>{errors.email.message}</span>}
             </p>
-            <button
-              type="submit"
-              className={styles.button}
-              disabled={isSubmitting}
-            >
+            <button type="submit" className={styles.button} disabled={isSubmitting}>
               {isSubmitting ? "Отправляется..." : "Отправить данные"}
             </button>
           </form>

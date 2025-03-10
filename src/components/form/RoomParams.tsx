@@ -1,5 +1,7 @@
 import styles from "@/styles/form/roomParams.module.css";
 import { roomParams } from "../../data/roomParams";
+import Cross from "../general/Cross";
+import handlerReset from "../../utils/handlerReset";
 
 type Props = {
   room: { length: string; width: string; height: string };
@@ -11,6 +13,7 @@ function RoomParameters({ room, handleInputChange, setRoom }: Props) {
   return (
     <section>
       <h2 className={styles.title}>Параметры комнаты</h2>
+      <Cross onClick={handlerReset} styles={{ position: "absolute", top: "10px", right: "10px" }} />
       <div className={styles.grid}>
         {Object.keys(room).map((key, index) => (
           <label key={key} className={styles.label}>
