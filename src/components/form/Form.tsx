@@ -92,7 +92,9 @@ function Form() {
           results={results}
         />
       </form>
-      {isFormShow && <FeedbackForm onClick={sendFormHandler} results={results} />}
+      {isFormShow && (
+        <FeedbackForm closeFrame={sendFormHandler} onClick={sendFormHandler} results={results} />
+      )}
     </main>
   );
 }

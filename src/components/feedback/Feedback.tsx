@@ -13,9 +13,10 @@ type FormDataType = {
 type FeedbackFormProps = {
   results: { wallpaperArea: string; rollsNeeded: number; wallpaperM2: string } | null;
   onClick: () => void;
+  closeFrame: () => void;
 };
 
-export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
+export default function FeedbackForm({ results, onClick, closeFrame }: FeedbackFormProps) {
   const schema = z.object({
     name: z.string().min(2, "Имя должно содержать хотя бы 2 символа"),
     email: z.string().email("Неверный формат email"),
@@ -57,7 +58,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
   return (
     <div className={styles.overlay}>
       <section className={styles.feedback}>
-        <Cross styles={{ position: "absolute", top: 10, right: 10 }} />
+        <Cross onClick={closeFrame} styles={{ position: "absolute", top: 10, right: 10 }} />
         <div className={styles.header}>
           <h2 className={styles.title}>Обратная связь</h2>
           <p className={styles.text}>
