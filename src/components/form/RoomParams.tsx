@@ -13,7 +13,7 @@ function RoomParameters({ room, handleInputChange, setRoom }: Props) {
   return (
     <section>
       <h2 className={styles.title}>Параметры комнаты</h2>
-      <Cross onClick={handlerReset} styles={{ position: "absolute", top: "10px", right: "10px" }} />
+      <Cross onClick={handlerReset} styles={{ position: "absolute", top: "30px", right: "30px" }} />
       <div className={styles.grid}>
         {Object.keys(room).map((key, index) => (
           <label key={key} className={styles.label}>

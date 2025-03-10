@@ -1,2 +1,4 @@
-export const rollSizes: string[] = ["1.06 x 10м", "1.06 x 25м"];
-
+export const rollSizes: Record<string, string> = {
+  "1.06 x 10м": "medium",
+  "1.06 x 25м": "large",
+};

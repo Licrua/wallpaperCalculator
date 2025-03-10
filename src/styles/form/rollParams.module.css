@@ -54,6 +54,8 @@
   color: #fff;
 }
 
+
+
 @media (max-width: 850px) {
   .metrics {
     display: flex;

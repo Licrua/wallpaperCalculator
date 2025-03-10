@@ -7,8 +7,6 @@ import ResultsSection from "./ResultSection";
 import Button from "../general/Button";
 import { rollSizes } from "../../data/rollSizes";
 import { rapports } from "../../data/rapports";
-// import { calculateMaterials } from "../../utils/calculateMaterials";
-// import handleInputChange from "../../utils/handleInputChange";
 import FeedbackForm from "../feedback/Feedback";
 import { calculateMaterials } from "../../utils/calculateMaterials";
 import handleInputChange from "../../utils/handleInputChange";
@@ -17,7 +15,9 @@ function Form() {
   const [room, setRoom] = useState({ length: "14.2", width: "28.5", height: "18.5" });
   const [windows, setWindows] = useState<{ id: number; height: string; width: string }[]>([]);
   const [doors, setDoors] = useState<{ id: number; height: string; width: string }[]>([]);
-  const [rollSize, setRollSize] = useState(rollSizes[0]);
+  const [rollSize, setRollSize] = useState(Object.keys(rollSizes)[0]);
+  console.log("rollSize", rollSize);
+
   const [rapport, setRapport] = useState(Object.keys(rapports)[0]);
   const [isFormShow, setIsFormShow] = useState(false);
   const [results, setResults] = useState<{
@@ -47,7 +47,7 @@ function Form() {
     });
     setWindows([]);
     setDoors([]);
-    setRollSize(rollSizes[0]);
+    setRollSize(Object.keys(rollSizes)[0]);
     setRapport(Object.keys(rapports)[0]);
     setResults(null);
   };
