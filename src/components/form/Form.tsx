@@ -35,7 +35,6 @@ function Form() {
   };
   const sendFormHandler = () => {
     setIsFormShow(false);
-    alert("Форма отрпавлена успешна");
   };
 
   const resetForm = () => {

@@ -14,10 +14,6 @@ function App() {
         reverseOrder={false}
         toastOptions={{
           duration: 3000,
-          style: {
-            background: "#333",
-            color: "#fff",
-          },
         }}
       />
       <Container>

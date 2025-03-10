@@ -1,7 +1,8 @@
 .feedback {
   display: grid;
   padding: 50px;
-  border: none;
+  border: 2px solid grey;
+  margin: 10px;
   background-color: gainsboro;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -87,13 +88,14 @@
   max-width: 526px;
   min-height: 75px;
   color: white;
+  border: 2px solid white;
   background: var(--color-button);
   margin-top: 40px;
   transition: transform 0.2s ease;
 }
 
 .button:hover {
-  border: 2px solid gold;
+  border: 2px solid black;
 }
 
 .span {

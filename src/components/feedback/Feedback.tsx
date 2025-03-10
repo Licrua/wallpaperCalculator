@@ -49,7 +49,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
       toast.success("Форма успешна отправлена!");
       onClick();
     } else {
-		toast.error("Что - то пошло не так");
+      toast.error("Что - то пошло не так");
     }
   };
 
@@ -63,7 +63,7 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
           </p>
         </div>
         <div className={styles.formContainer}>
-          <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+          <form autoComplete="on" onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <p className={styles.field}>
               <label htmlFor="name" className={styles.label}>
                 Имя
@@ -79,7 +79,6 @@ export default function FeedbackForm({ results, onClick }: FeedbackFormProps) {
               {errors.email && <span className={styles.error}>{errors.email.message}</span>}
             </p>
             <button
-              onClick={onClick}
               type="submit"
               className={styles.button}
               disabled={isSubmitting}
