@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# 🏠 Wallpaper Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в репозиторий **Wallpaper Calculator**! 🎨 Этот проект поможет вам рассчитать необходимое количество обоев для помещения, учитывая размеры стен и параметры рулонов.
 
-Currently, two official plugins are available:
+## 🔗 Демо
+[🖥 Посмотреть калькулятор](https://wallpaper-calculator-887j.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 О проекте
+**Wallpaper Calculator** создан для удобного и точного расчета количества рулонов обоев, необходимых для оформления комнаты. В нем учтены различные параметры, такие как:
 
-## Expanding the ESLint configuration
+- 🏷 Расчет обоев, учитывая двери и окна, а также раппорт
+- 🎯 Удобный интерфейс для быстрого взаимодействия
+- 📏 Отправка результатов на почту пользователя
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Используемые технологии
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Vite** – быстрая сборка и горячая перезагрузка
+- **React** – декларативный UI и управление состоянием
+- **TypeScript** – строгая типизация для надежного кода
+- **React Hook Form** – удобная работа с формами
+- **Zod** – валидация данных
+- **React Hot Toast** – уведомления
+- **@hookform/resolvers** – интеграция валидации с React Hook Form
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Запуск проекта
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Клонируйте репозиторий:
+   ```sh
+   git clone https://github.com/yourusername/wallpaper-calculator.git
+   ```
+2. Перейдите в папку проекта:
+   ```sh
+   cd wallpaper-calculator
+   ```
+3. Установите зависимости:
+   ```sh
+   npm install
+   ```
+4. Запустите локальный сервер:
+   ```sh
+   npm run dev
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📬 Контакты
+
+- **Email:** ilay1275@mail.ru
+- **Telegram:** [@yourusername](https://t.me/@Ilya01034 )
+
+Если вам понравился проект, поставьте ⭐ и подпишитесь на обновления! 😊
+
+
