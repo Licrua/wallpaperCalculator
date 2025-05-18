@@ -1,4 +1,3 @@
-@import "./reset.css";
 
 :root {
   --font-primary: "Roboto", sans-serif;
@@ -52,7 +51,6 @@ h6 {
   font-weight: var(--primary-font-weight);
 }
 
-
 h1 {
   font-size: 2em;
 }
@@ -89,6 +87,3 @@ picture {
 *::after {
   box-sizing: border-box;
 }
-
-
-

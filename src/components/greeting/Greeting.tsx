@@ -5,11 +5,11 @@ import { GreetingHeader } from "./GreetingButton";
 
 function Greeting({ onClick }: { onClick: () => void }) {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <GreetingHeader />
       <GreetingDescription />
       <GreetingButton onClick={onClick} />
-    </div>
+    </section>
   );
 }
 
